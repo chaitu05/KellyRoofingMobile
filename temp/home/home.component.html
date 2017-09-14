@@ -1,0 +1,11 @@
+
+<StackLayout>
+    <ListView [items]="orders" (itemTap)="onOrderTap($event)">
+        <ng-template let-item="item" let-odd="odd" let-even="even">
+            <StackLayout orientation="horizontal" [class.odd]="odd" [class.even]="even">
+                <Label [text]="item.jobName"></Label>
+                <Label [text]="item.materialType"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</StackLayout>

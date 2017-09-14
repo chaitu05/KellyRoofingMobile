@@ -1,0 +1,14 @@
+@import '~nativescript-theme-core/scss/light';
+// Custom common variables
+@import '../../app-variables';
+
+$order-odd-bg-color: #d1e1f9;
+$order-even-bg-color: #FFFFFF;
+
+.odd {
+    background-color: $order-odd-bg-color;
+}
+
+.even {
+    background-color: $order-even-bg-color;
+}
